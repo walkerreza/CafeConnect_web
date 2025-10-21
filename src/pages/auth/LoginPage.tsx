@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/atoms/Button';
 import Input from '../../components/atoms/Input';
+import logo from '../../assets/coffeelogo1.png';
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -33,7 +34,7 @@ const LoginPage: React.FC = () => {
         {/* Logo Overlay on Mobile */}
         <div className="absolute inset-0 flex items-center justify-center lg:hidden">
           <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-800 rounded-full flex items-center justify-center shadow-2xl">
-            <span className="text-white text-3xl">☕</span>
+           <img src={logo} alt="CafeConnect Logo" className="w-8 h-8 object-contain" />
           </div>
         </div>
       </div>
@@ -44,7 +45,7 @@ const LoginPage: React.FC = () => {
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-800 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white text-3xl">☕</span>
+              <img src={logo} alt="CafeConnect Logo" className="w-8 h-8 object-contain" />
             </div>
           </div>
 

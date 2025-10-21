@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../atoms/Button';
+import logo from '../../../assets/coffeelogo1.png';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-amber-900 to-amber-700 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
-              <span className="text-white text-2xl">☕</span>
+              <img src={logo} alt="CafeConnect Logo" className="w-8 h-8 object-contain" />
             </div>
             <span className="text-xl font-bold text-gray-800 hidden sm:block">
               CafeConnect

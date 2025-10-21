@@ -122,7 +122,17 @@ const seedData = async () => {
         password: 'admin123', // Di production, hash dengan bcrypt
         phone: '081234567890',
         role: 'admin',
-        isActive: true
+        isActive: true,
+        avatar: ''
+      },
+      {
+        name: 'Owner User',
+        email: 'owner@cafeconnect.com',
+        password: 'owner123',
+        phone: '081234567899',
+        role: 'owner',
+        isActive: true,
+        avatar: ''
       },
       {
         name: 'John Doe',
@@ -130,7 +140,8 @@ const seedData = async () => {
         password: 'user123',
         phone: '081234567891',
         role: 'customer',
-        isActive: true
+        isActive: true,
+        avatar: ''
       },
       {
         name: 'Jane Smith',
@@ -138,7 +149,8 @@ const seedData = async () => {
         password: 'user123',
         phone: '081234567892',
         role: 'customer',
-        isActive: true
+        isActive: true,
+        avatar: ''
       }
     ];
     
